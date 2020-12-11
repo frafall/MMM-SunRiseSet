@@ -90,6 +90,8 @@ Module.register("MMM-SunRiseSet", {
 			img.src = "modules/MMM-SunRiseSet/pix/phases.png";
 			pic.appendChild(img);
 			wrapper.appendChild(pic);
+		} else if (this.config.image == "no") {
+
 		} else if (this.config.image == "map") {
 			var getTimeStamp = new Date().getTime(); // @Sean & @ Strawberry
 			img.src = "http://api.usno.navy.mil/imagery/earth.png?date=today&seed=" + getTimeStamp; //
